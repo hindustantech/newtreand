@@ -1,0 +1,101 @@
+
+> next-app@0.1.0 dev
+> next dev
+
+▲ Next.js 16.3.1 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://172.17.240.1:3000
+- Environments: .env.local, .env
+✓ Ready in 1241ms
+✓ Running next.config.mjs took 52ms
+
+ GET / 200 in 1247ms (next.js: 724ms, application-code: 524ms)
+ GET /api/auth/me 200 in 741ms (next.js: 158ms, application-code: 583ms)
+ GET /api/auth/me 200 in 25ms (next.js: 6ms, application-code: 18ms)
+ GET / 200 in 82ms (next.js: 15ms, application-code: 68ms)
+ GET / 200 in 70ms (next.js: 11ms, application-code: 60ms)
+  Reload env: .env.local
+ GET / 200 in 285ms (next.js: 200ms, application-code: 85ms)
+ GET / 200 in 200ms (next.js: 78ms, application-code: 122ms)
+ GET / 200 in 135ms (next.js: 11ms, application-code: 125ms)
+ GET / 200 in 112ms (next.js: 11ms, application-code: 101ms)
+ GET / 200 in 108ms (next.js: 7ms, application-code: 101ms)
+ GET / 200 in 112ms (next.js: 8ms, application-code: 104ms)
+ GET / 200 in 118ms (next.js: 9ms, application-code: 109ms)
+ GET / 200 in 123ms (next.js: 9ms, application-code: 114ms)
+ GET / 200 in 118ms (next.js: 10ms, application-code: 108ms)
+ GET / 200 in 137ms (next.js: 8ms, application-code: 129ms)
+ GET / 200 in 187ms (next.js: 9ms, application-code: 178ms)
+ GET / 200 in 172ms (next.js: 41ms, application-code: 131ms)
+ GET / 200 in 114ms (next.js: 8ms, application-code: 106ms)
+ GET / 200 in 112ms (next.js: 7ms, application-code: 105ms)
+ GET / 200 in 108ms (next.js: 7ms, application-code: 101ms)
+ GET / 200 in 113ms (next.js: 6ms, application-code: 107ms)
+ GET / 200 in 117ms (next.js: 9ms, application-code: 108ms)
+ GET / 200 in 99ms (next.js: 8ms, application-code: 90ms)
+ GET / 200 in 110ms (next.js: 7ms, application-code: 103ms)
+ GET / 200 in 115ms (next.js: 8ms, application-code: 107ms)
+ GET / 200 in 95ms (next.js: 8ms, application-code: 88ms)
+ GET / 200 in 98ms (next.js: 7ms, application-code: 91ms)
+ GET / 200 in 96ms (next.js: 11ms, application-code: 86ms)
+ GET / 200 in 47ms (next.js: 8ms, application-code: 39ms)
+✓ Compiled in 162ms
+ GET / 200 in 80ms (next.js: 20ms, application-code: 60ms)
+✓ Compiled in 103ms
+ GET / 200 in 74ms (next.js: 18ms, application-code: 56ms)
+✓ Compiled in 173ms
+ GET / 200 in 84ms (next.js: 22ms, application-code: 62ms)
+✓ Compiled in 144ms
+ GET / 200 in 62ms (next.js: 18ms, application-code: 44ms)
+✓ Compiled in 97ms
+ GET / 200 in 72ms (next.js: 19ms, application-code: 53ms)
+✓ Compiled in 305ms
+ GET / 200 in 72ms (next.js: 19ms, application-code: 53ms)
+✓ Compiled in 115ms
+ GET /api/auth/me 200 in 214ms (next.js: 134ms, application-code: 80ms)
+ GET / 200 in 311ms (next.js: 20ms, application-code: 291ms)
+ GET /api/auth/me 200 in 23ms (next.js: 8ms, application-code: 15ms)
+✓ Compiled in 95ms
+ GET / 200 in 79ms (next.js: 15ms, application-code: 64ms)
+✓ Compiled in 111ms
+ GET / 200 in 121ms (next.js: 18ms, application-code: 103ms)
+✓ Compiled in 84ms
+ GET / 200 in 75ms (next.js: 18ms, application-code: 57ms)
+✓ Compiled in 85ms
+ GET / 200 in 67ms (next.js: 18ms, application-code: 49ms)
+✓ Compiled in 102ms
+ GET / 200 in 68ms (next.js: 17ms, application-code: 51ms)
+✓ Compiled in 108ms
+ GET / 200 in 67ms (next.js: 19ms, application-code: 48ms)
+✓ Compiled in 88ms
+ GET / 200 in 67ms (next.js: 19ms, application-code: 48ms)
+✓ Compiled in 96ms
+ GET / 200 in 67ms (next.js: 19ms, application-code: 48ms)
+ GET /api/auth/me 200 in 30ms (next.js: 6ms, application-code: 24ms)
+ POST /api/auth/register 403 in 763ms (next.js: 711ms, application-code: 52ms)
+ GET /api/auth/me 200 in 35ms (next.js: 7ms, application-code: 28ms)
+ GET /api/playlists 401 in 549ms (next.js: 532ms, application-code: 17ms)
+ GET /api/auth/me 200 in 27ms (next.js: 3ms, application-code: 24ms)
+ GET /api/auth/me 200 in 21ms (next.js: 5ms, application-code: 17ms)
+ GET /api/auth/me 200 in 30ms (next.js: 4ms, application-code: 26ms)
+ POST /api/auth/register 403 in 30ms (next.js: 7ms, application-code: 23ms)
+ POST /api/auth/register 400 in 22ms (next.js: 5ms, application-code: 17ms)
+ GET /api/auth/me 200 in 21ms (next.js: 4ms, application-code: 17ms)
+ GET /api/playlists 401 in 22ms (next.js: 5ms, application-code: 18ms)
+ POST /api/auth/login 400 in 421ms (next.js: 405ms, application-code: 16ms)
+ POST /api/auth/login 400 in 24ms (next.js: 5ms, application-code: 20ms)
+ POST /api/auth/login 400 in 11ms (next.js: 4ms, application-code: 7ms)
+ POST /api/auth/login 400 in 17ms (next.js: 6ms, application-code: 11ms)
+ POST /api/auth/login 400 in 20ms (next.js: 4ms, application-code: 16ms)
+ POST /api/auth/login 400 in 18ms (next.js: 3ms, application-code: 15ms)
+ POST /api/auth/login 400 in 21ms (next.js: 5ms, application-code: 16ms)
+ POST /api/auth/login 400 in 33ms (next.js: 4ms, application-code: 28ms)
+ POST /api/auth/login 400 in 17ms (next.js: 4ms, application-code: 13ms)
+ POST /api/auth/login 400 in 15ms (next.js: 5ms, application-code: 11ms)
+ POST /api/auth/login 400 in 22ms (next.js: 4ms, application-code: 17ms)
+ POST /api/auth/logout 200 in 389ms (next.js: 377ms, application-code: 12ms)
+ GET /api/auth/me 200 in 22ms (next.js: 4ms, application-code: 18ms)
+ GET /api/auth/me 200 in 33ms (next.js: 7ms, application-code: 26ms)
+ POST /api/auth/register 400 in 36ms (next.js: 4ms, application-code: 32ms)
+ GET /api/auth/me 200 in 24ms (next.js: 4ms, application-code: 20ms)
+ POST /api/auth/register 403 in 13ms (next.js: 5ms, application-code: 7ms)

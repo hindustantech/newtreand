@@ -1,0 +1,110 @@
+[browser] The final argument passed to useEffect changed size between renders. The order and size of this array must remain constant.
+
+Previous: [[object Object], ()=>{
+            const track = stateRef.current.currentTrack;
+            if (!track) return;
+            const playerReady = __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$yt$2d$embed$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["ytEmbed"].isPlayerReady();
+            const shouldReload = loadedTrackId.current !== track.id || !playerReady;
+            if (shouldReload) {
+                __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$yt$2d$embed$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["ytEmbed"].ensurePlayer().then({
+                    "useAudioPlayer.useCallback[play]": ()=>__TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$yt$2d$embed$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["ytEmbed"].loadTrack(track.id, true)
+                }["useAudioPlayer.useCallback[play]"]).catch({
+                    "useAudioPlayer.useCallback[play]": ()=>{
+                        setBuffering(false);
+                        setIsPlaying(false);
+                    }
+                }["useAudioPlayer.useCallback[play]"]);
+                return;
+            }
+            __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$yt$2d$embed$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["ytEmbed"].playVideo().catch({
+                "useAudioPlayer.useCallback[play]": ()=>{}
+            }["useAudioPlayer.useCallback[play]"]);
+        }, ()=>{
+            __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$yt$2d$embed$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["ytEmbed"].pauseVideo().catch({
+                "useAudioPlayer.useCallback[pause]": ()=>{}
+            }["useAudioPlayer.useCallback[pause]"]);
+            setIsPlaying(false);
+        }, ()=>{
+            const { order: o, index: i, repeat: r } = stateRef.current;
+            if (i < o.length - 1) {
+                goTo(i + 1);
+            } else if (r === 'all') {
+                goTo(0);
+            } else {
+                pause();
+                setCurrentTime(0);
+                currentTimeRef.current = 0;
+            }
+        }, ()=>{
+            const { order: o, index: i, repeat: r } = stateRef.current;
+            if (currentTimeRef.current > 5) {
+                seekTo(0);
+                return;
+            }
+            if (i > 0) {
+                goTo(i - 1);
+            } else if (r === 'all') {
+                goTo(o.length - 1);
+            } else {
+                seekTo(0);
+            }
+        }]
+Incoming: [[object Object], , ()=>{
+            const track = stateRef.current.currentTrack;
+            if (!track) return;
+            const playerReady = __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$yt$2d$embed$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["ytEmbed"].isPlayerReady();
+            const shouldReload = loadedTrackId.current !== track.id || !playerReady;
+            if (shouldReload) {
+                __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$yt$2d$embed$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["ytEmbed"].ensurePlayer().then({
+                    "useAudioPlayer.useCallback[play]": ()=>__TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$yt$2d$embed$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["ytEmbed"].loadTrack(track.id, true)
+                }["useAudioPlayer.useCallback[play]"]).catch({
+                    "useAudioPlayer.useCallback[play]": ()=>{
+                        setBuffering(false);
+                        setIsPlaying(false);
+                    }
+                }["useAudioPlayer.useCallback[play]"]);
+                return;
+            }
+            __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$yt$2d$embed$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["ytEmbed"].playVideo().catch({
+                "useAudioPlayer.useCallback[play]": ()=>{}
+            }["useAudioPlayer.useCallback[play]"]);
+        }, ()=>{
+            __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$yt$2d$embed$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["ytEmbed"].pauseVideo().catch({
+                "useAudioPlayer.useCallback[pause]": ()=>{}
+            }["useAudioPlayer.useCallback[pause]"]);
+            setIsPlaying(false);
+        }, ()=>{
+            const { order: o, index: i, repeat: r } = stateRef.current;
+            if (i < o.length - 1) {
+                goTo(i + 1);
+            } else if (r === 'all') {
+                goTo(0);
+            } else {
+                pause();
+                setCurrentTime(0);
+                currentTimeRef.current = 0;
+            }
+        }, ()=>{
+            const { order: o, index: i, repeat: r } = stateRef.current;
+            if (currentTimeRef.current > 5) {
+                seekTo(0);
+                return;
+            }
+            if (i > 0) {
+                goTo(i - 1);
+            } else if (r === 'all') {
+                goTo(o.length - 1);
+            } else {
+                seekTo(0);
+            }
+        }] 
+    at useAudioPlayer (hooks/use-audio-player.js:433:12)
+    at MusicApp (components/MusicApp.js:29:32)
+    at Set.forEach (<anonymous>)
+  431 |   }, [currentTrack]);
+  432 |
+> 433 |   useEffect(() => {
+      |            ^
+  434 |     if (!currentTrack || !('mediaSession' in navigator)) return;
+  435 |     const artworkUrl = artwork || currentTrack.thumbnail;
+  436 |     navigator.mediaSession.metadata = new MediaMetadata({ (hooks/use-audio-player.js:433:12)

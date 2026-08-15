@@ -1,0 +1,110 @@
+⨯ Error: MONGODB_URI is not set in .env.local
+    at connectToDatabase (lib\mongodb.js:9:11)
+    at POST (app\api\auth\register\route.js:40:37)
+   7 | export async function connectToDatabase() {
+   8 |   if (!uri) {
+>  9 |     throw new Error('MONGODB_URI is not set in .env.local');
+     |           ^
+  10 |   }
+  11 |   if (!globalForMongo.mongoClient) {
+  12 |     const client = new MongoClient(uri);
+⨯ Error: MONGODB_URI is not set in .env.local
+    at connectToDatabase (lib\mongodb.js:9:11)
+    at POST (app\api\auth\login\route.js:36:37)
+   7 | export async function connectToDatabase() {
+   8 |   if (!uri) {
+>  9 |     throw new Error('MONGODB_URI is not set in .env.local');
+     |           ^
+  10 |   }
+  11 |   if (!globalForMongo.mongoClient) {
+  12 |     const client = new MongoClient(uri);
+⨯ Error: MONGODB_URI is not set in .env.local
+    at connectToDatabase (lib\mongodb.js:9:11)
+    at POST (app\api\auth\login\route.js:36:37)
+   7 | export async function connectToDatabase() {
+   8 |   if (!uri) {
+>  9 |     throw new Error('MONGODB_URI is not set in .env.local');
+     |           ^
+  10 |   }
+  11 |   if (!globalForMongo.mongoClient) {
+  12 |     const client = new MongoClient(uri);
+⨯ Error: MONGODB_URI is not set in .env.local
+    at connectToDatabase (lib\mongodb.js:9:11)
+    at POST (app\api\auth\login\route.js:36:37)
+   7 | export async function connectToDatabase() {
+   8 |   if (!uri) {
+>  9 |     throw new Error('MONGODB_URI is not set in .env.local');
+     |           ^
+  10 |   }
+  11 |   if (!globalForMongo.mongoClient) {
+  12 |     const client = new MongoClient(uri);
+⨯ Error: MONGODB_URI is not set in .env.local
+    at connectToDatabase (lib\mongodb.js:9:11)
+    at POST (app\api\auth\login\route.js:36:37)
+   7 | export async function connectToDatabase() {
+   8 |   if (!uri) {
+>  9 |     throw new Error('MONGODB_URI is not set in .env.local');
+     |           ^
+  10 |   }
+  11 |   if (!globalForMongo.mongoClient) {
+  12 |     const client = new MongoClient(uri);
+⨯ Error: MONGODB_URI is not set in .env.local
+    at connectToDatabase (lib\mongodb.js:9:11)
+    at POST (app\api\auth\login\route.js:36:37)
+   7 | export async function connectToDatabase() {
+   8 |   if (!uri) {
+>  9 |     throw new Error('MONGODB_URI is not set in .env.local');
+     |           ^
+  10 |   }
+  11 |   if (!globalForMongo.mongoClient) {
+  12 |     const client = new MongoClient(uri);
+⨯ Error: MONGODB_URI is not set in .env.local
+    at connectToDatabase (lib\mongodb.js:9:11)
+    at POST (app\api\auth\login\route.js:36:37)
+   7 | export async function connectToDatabase() {
+   8 |   if (!uri) {
+>  9 |     throw new Error('MONGODB_URI is not set in .env.local');
+     |           ^
+  10 |   }
+  11 |   if (!globalForMongo.mongoClient) {
+  12 |     const client = new MongoClient(uri);
+⨯ Error: MONGODB_URI is not set in .env.local
+    at connectToDatabase (lib\mongodb.js:9:11)
+    at POST (app\api\auth\login\route.js:36:37)
+   7 | export async function connectToDatabase() {
+   8 |   if (!uri) {
+>  9 |     throw new Error('MONGODB_URI is not set in .env.local');
+     |           ^
+  10 |   }
+  11 |   if (!globalForMongo.mongoClient) {
+  12 |     const client = new MongoClient(uri);
+⨯ Error: MONGODB_URI is not set in .env.local
+    at connectToDatabase (lib\mongodb.js:9:11)
+    at POST (app\api\auth\login\route.js:36:37)
+   7 | export async function connectToDatabase() {
+   8 |   if (!uri) {
+>  9 |     throw new Error('MONGODB_URI is not set in .env.local');
+     |           ^
+  10 |   }
+  11 |   if (!globalForMongo.mongoClient) {
+  12 |     const client = new MongoClient(uri);
+⨯ Error: MONGODB_URI is not set in .env.local
+    at connectToDatabase (lib\mongodb.js:9:11)
+    at POST (app\api\auth\login\route.js:36:37)
+   7 | export async function connectToDatabase() {
+   8 |   if (!uri) {
+>  9 |     throw new Error('MONGODB_URI is not set in .env.local');
+     |           ^
+  10 |   }
+  11 |   if (!globalForMongo.mongoClient) {
+  12 |     const client = new MongoClient(uri);
+⨯ Error: MONGODB_URI is not set in .env.local
+    at connectToDatabase (lib\mongodb.js:9:11)
+    at POST (app\api\auth\login\route.js:36:37)
+   7 | export async function connectToDatabase() {
+   8 |   if (!uri) {
+>  9 |     throw new Error('MONGODB_URI is not set in .env.local');
+     |           ^
+  10 |   }
+  11 |   if (!globalForMongo.mongoClient) {
+  12 |     const client = new MongoClient(uri);
