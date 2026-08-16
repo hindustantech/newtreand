@@ -110,7 +110,7 @@ export default function AuthModal({ open, onClose, login, register }) {
               <span className="h-px flex-1 bg-white/10" />
             </div>
 
-            <form onSubmit={submit} className="space-y-4">
+            {/* <form onSubmit={submit} className="space-y-4">
               <label className="block">
                 <span className="mb-1.5 block text-xs font-medium text-soft">Email</span>
                 <input
@@ -149,7 +149,7 @@ export default function AuthModal({ open, onClose, login, register }) {
                 {busy && <Loader2 size={15} className="animate-spin" />}
                 {mode === 'login' ? 'Sign in' : 'Create account'}
               </button>
-            </form>
+            </form> */}
 
             <p className="mt-5 text-center text-xs text-muted">Your playlists and uploaded artwork stay private to your account for editing.</p>
           </motion.div>
