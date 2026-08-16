@@ -35,11 +35,27 @@ export async function POST(request) {
 
   const db = await connectToDatabase();
   const user = await db.collection('users').findOne({ email });
-  if (!user || !(await bcrypt.compare(password, user.passwordHash))) {
+  if (!user) {
+    return NextResponse.json({ error: 'Invalid email or password' }, { status: 401 });
+  }
+  if (!user.passwordHash) {
+    return NextResponse.json(
+      { error: 'This account uses Google sign-in. Continue with Google.' },
+      { status: 401 },
+    );
+  }
+  if (!(await bcrypt.compare(password, user.passwordHash))) {
     return NextResponse.json({ error: 'Invalid email or password' }, { status: 401 });
   }
 
   await setAuthCookie(user._id.toString());
 
-  return NextResponse.json({ user: { id: user._id.toString(), email: user.email } });
+  return NextResponse.json({
+    user: {
+      id: user._id.toString(),
+      email: user.email,
+      name: user.name || null,
+      picture: user.picture || null,
+    },
+  });
 }

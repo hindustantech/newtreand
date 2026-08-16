@@ -40,12 +40,20 @@ export async function POST(request) {
   const db = await connectToDatabase();
   const existing = await db.collection('users').findOne({ email });
   if (existing) {
-    return NextResponse.json({ error: 'An account with this email already exists' }, { status: 409 });
+    return NextResponse.json(
+      { error: existing.googleId && !existing.passwordHash
+        ? 'An account with this email already exists. Try signing in with Google.'
+        : 'An account with this email already exists' },
+      { status: 409 },
+    );
   }
 
   const passwordHash = await bcrypt.hash(password, 10);
   const result = await db.collection('users').insertOne({ email, passwordHash, createdAt: new Date() });
   await setAuthCookie(result.insertedId.toString());
 
-  return NextResponse.json({ user: { id: result.insertedId.toString(), email } }, { status: 201 });
+  return NextResponse.json(
+    { user: { id: result.insertedId.toString(), email, name: null, picture: null } },
+    { status: 201 },
+  );
 }

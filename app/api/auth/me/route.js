@@ -8,5 +8,12 @@ export async function GET() {
   if (!user) {
     return NextResponse.json({ user: null });
   }
-  return NextResponse.json({ user: { id: user._id.toString(), email: user.email } });
+  return NextResponse.json({
+    user: {
+      id: user._id.toString(),
+      email: user.email,
+      name: user.name || null,
+      picture: user.picture || null,
+    },
+  });
 }

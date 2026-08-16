@@ -61,10 +61,14 @@ export default function Header() {
             <>
               <span
                 title={user.email}
-                className="hidden max-w-[160px] items-center gap-1.5 rounded-full bg-white/10 px-4 py-2 text-xs font-semibold text-white sm:flex"
+                className="hidden max-w-[180px] items-center gap-1.5 rounded-full bg-white/10 px-4 py-2 text-xs font-semibold text-white sm:flex"
               >
-                <UserIcon size={13} />
-                <span className="truncate">{user.email}</span>
+                {user.picture ? (
+                  <img src={user.picture} alt="" className="h-5 w-5 rounded-full object-cover" />
+                ) : (
+                  <UserIcon size={13} />
+                )}
+                <span className="truncate">{user.name || user.email}</span>
               </span>
               <button
                 type="button"
